@@ -1,0 +1,104 @@
+How errors well handled!!
+
+1. Bundler Version error
+via- https://stackoverflow.com/a/67287741
+"""
+You need to do the following to ensure the correct default version of Bundler is used for the repo you are working with.
+
+You can run the following but this can present issues as it can break your local gems on your system as ALL of them are updated.
+
+gem update --system
+The following method is a much safer way of ensuring Bundler is updated
+
+Get your gem environment and take note of INSTALLATION_DIRECTORY
+gem environment
+Then run the following
+cd <INSTALLATION DIRECTORY>/specifications/default
+rm bundler-<old_default_version>.gemspec
+gem install --default bundler -v <new_default_version>
+If you have followed 2 and that still does not work, then run
+gem install bundler:<new_default_version>
+to ensure you your local repo is using the correct version
+
+"""
+
+
+2. Parser error
+// internet says to add webrick but it doesn't work
+It's because lol ruby 3.x doesn't have webrick (https://github.com/github/pages-gem/issues/752#issuecomment-877780567)
+hence. install ruby 2.7.x
+
+3. arrays
+"""
+The official doc of Liquid doesn’t tell us a way to create an array except this:
+
+
+{% assign beatles = "John, Paul, George, Ringo" | split: ", " %}
+
+{% for member in beatles %}
+  {{ member }}
+{% endfor %}
+But what if you want to create an array of objects? Well, there’s a trick. First, create an empty array using split and then add your object to the array using push.
+
+
+{% assign posts = "" | split: "," %}
+{% assign posts = posts | push: post %}
+
+
+---
+my_array = []
+---
+
+{% assign my_array | push: 'abc' %}
+
+{% assign my_array | push: 'def' %}
+
+{{ my_array | inspect }}
+
+<!-- ['abc', 'def'] -->
+"""
+
+4.switch statement
+"""
+case/when
+Creates a switch statement to execute a particular block of code when a variable has a specified value. case initializes the switch statement, and when statements define the various conditions.
+
+A when tag can accept multiple values. When multiple values are provided, the expression is returned when the variable matches any of the values inside of the tag. Provide the values as a comma-separated list, or separate them using an or operator.
+
+An optional else statement at the end of the case provides code to execute if none of the conditions are met.
+
+Input
+
+{% assign handle = "cake" %}
+{% case handle %}
+  {% when "cake" %}
+     This is a cake
+  {% when "cookie", "biscuit" %}
+     This is a cookie
+  {% else %}
+     This is not a cake nor a cookie
+{% endcase %}
+
+"""
+IRB Format
+.div( :id => 'mount_0_0_/i' ).div.div( :class => '' ).div( :class => 'x9f619 x1n2onr6 x1ja2u2z' ).div( :class => 'x9f619 x1n2onr6 x1ja2u2z' ).div( :class => 'x78zum5 xdt5ytf x1n2onr6 x1ja2u2z' ).div( :class => 'x78zum5 xdt5ytf x1n2onr6' ).div( :class => 'x78zum5 xdt5ytf x1n2onr6 xat3117 xxzkxad' ).div( :class => 'x78zum5 xdt5ytf x10cihs4 x1t2pt76 x1n2onr6 x1ja2u2z' ).div( :class => 'x78zum5 xdt5ytf x1t2pt76' ).div( :class => 'x78zum5 xdt5ytf x1iyjqo2 x1t2pt76 xeuugli' ).div( :class => 'x78zum5 xdt5ytf x1t2pt76 x1n2onr6' ).div( :class => 'x6s0dn4 x78zum5 xdt5ytf x193iq5w' ).div( :class => 'x9f619 x193iq5w x1talbiv x1sltb1f x3fxtfs x1swvt13 x1pi30zi xw7yly9' ).div( :class => 'x9f619 x1n2onr6 x1ja2u2z x2lah0s x1qjc9v5 x78zum5 x1q0g3np x1a02dak xl56j7k x9otpla x1n0m28w x1wsgfga xp7jhwk' ).div( :class => 'x9f619 x1n2onr6 x1ja2u2z xeuugli xs83m0k x1xmf6yo x1emribx x1e56ztr x1i64zmx xjl7jj x19h7ccj xu9j1y6 x7ep2pv' ).div.div.div( :class => 'x1yztbdb x1n2onr6 xh8yej3 x1ja2u2z' ).div( :class => 'x1n2onr6 x1ja2u2z' ).div( :class => '' ).div( :class => '' ).div( :class => 'x1a2a7pz' ).div( :class => 'x78zum5 xdt5ytf' ).div( :class => 'x9f619 x1n2onr6 x1ja2u2z' ).div( :class => 'x78zum5 x1n2onr6 xh8yej3' ).div( :class => 'x9f619 x1n2onr6 x1ja2u2z x2bj2ny x1qpq9i9 xdney7k xu5ydu1 xt3gfkd xh8yej3 x6ikm8r x10wlt62 xquyuld' ).div.div.div.div.div.div( :class => '' ).div( :id => ':Rahlaul9l5bb9l5qq75b5klbaH2:' ).div( :class => 'x78zum5 xdt5ytf xz62fqu x16ldp7u' ).div( :class => 'xu06os2 x1ok221b' ).span( :class => 'x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h' ).div( :class => 'xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a' ).div
+Immediate Ancestors (Parent, GrandParent, Great-GrandParent and Great-Great-GrandParent)
+div( :class => 'x78zum5 xdt5ytf xz62fqu x16ldp7u' )
+Great-Great-Grandparent
+
+▲
+div( :class => 'xu06os2 x1ok221b' )
+Great-Grandparent
+
+▲
+span( :class => 'x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h', :dir => 'auto' )
+Grandparent
+
+▲
+div( :class => 'xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a' )
+Direct Parent
+
+▲
+div( :dir => 'auto', :style => 'text-align: start;' )
+Current Element
+

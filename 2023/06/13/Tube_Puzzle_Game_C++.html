@@ -1,0 +1,345 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta data & title -->
+    <meta charset="utf-8">
+    <title>Project Tube Puzzle Game C++</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kathmandu University Computational Mathematics Club shortly known as KUCMC is Departmental Club which fully and faithfully runs academic activities for smooth growth of it's members. The club was established back in 2018 as youngest Department club of Kathmandu University registered under Student Welfare Council.
+">
+    <meta name="author" content="">
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="../../../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../../assets/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/3dtiles.css">
+    <script type="text/javascript" src="../../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../../js/wow.min.js"></script>
+    <script src="../../../js/3dtiles.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </head>
+  <body>
+
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand wow fadeInDownBig" href="../../../index.html"><img class="office-logo" src="../../../assets/img/slider/KUCMC_logo.png" alt="Office"></a>
+        </div>
+
+        <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li class="active">
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="../../../about.html">About</a>
+            </li>
+            <li>
+              <a href="../../../blog.html">Events</a>
+            </li>
+            <li>
+              <a href="../../../team.html">Team</a>
+            </li>
+            <li>
+              <a href="../../../contact.html"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+    
+    <div class="blog-post" style="margin:5%;">
+        <h1 class="blog-title">
+          <i class="fa fa-file-text"></i>
+          Project Tube Puzzle Game C++
+        </h1>
+        <br>
+         <!-- Begin #carousel-section -->
+      <section id="carousel-section" class="section-global-wrapper">
+        <div class="container-fluid-kamn">
+          <div class="row">
+            <div id="carousel-1" class="carousel slide" data-ride="carousel">
+
+              <!-- Indicators -->
+              <ol class="carousel-indicators visible-lg"><!--  1 --><li data-target="#carousel-1" data-slide-to="1"></li></ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                
+                  <!-- Begin Slide 1 --><div class="item active"><img src="/assets/img/projects/TubePuzzleGame.png" style="height:400px;width:100%;object-position:center;object-fit: scale-down;" alt="Image of 1 carousel">
+                      <div class="carousel-caption">
+                        <h3 class="carousel-title hidden-xs">_</h3>
+                        <p class="carousel-body">_</p>
+                      </div>
+                    </div>
+                  <!-- End Slide 1 -->
+
+
+                
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-1" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-1" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- End #carousel-section -->
+        <br>
+
+        <p><h3 align="center">Tube Puzzle Game</h3>
+<p align="center"> Tube Puzzle Game is a C++ game developed using Visual Studio and wxWidgets for GUI.
+    <br />
+</p>
+
+<h2 id="-table-of-contents">📝 Table of Contents</h2>
+
+<ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#getting_started">Getting Started</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#built_using">Built Using</a></li>
+  <li><a href="#file-structure">File Structure</a></li>
+  <li><a href="#screenshots">Screenshots</a></li>
+  <li><a href="#what-we-learned">What We Learned</a></li>
+  <li><a href="#authors">Authors</a></li>
+  <li><a href="#acknowledgement">Acknowledgments</a></li>
+</ul>
+
+<h2 id="-about-">🧐 About <a name="about"></a></h2>
+
+<p>The Tube Puzzle Game is a C++ project that presents an engaging and challenging puzzle-solving experience. It involves arranging a grid of tubes in a specific order by swapping them within columns. The project utilizes the wxWidgets framework for the graphical user interface, allowing for an intuitive and visually appealing game interface.</p>
+
+<p>To provide a dynamic gameplay experience, the levels in the Tube Puzzle Game are generated randomly with varying levels of difficulty. Each level presents a unique configuration of tubes that players must solve by strategically swapping and arranging them.</p>
+
+<p>The project incorporates standard libraries and data structures, such as stack and linked list, to manage tube stacks and support undo/redo commands. These data structures facilitate efficient manipulation and storage of game actions. Additionally, algorithms are implemented for tube arrangement and game completion checks, ensuring a challenging and satisfying gameplay experience.</p>
+
+<p>The Tube Puzzle Game’s significance lies in its practical application of data structures and algorithms, providing a valuable learning tool for students studying Data Structures and Algorithms (DSA). It demonstrates how these concepts can be effectively utilized in real-world scenarios. The project serves as an interactive and educational resource, enabling DSA students to grasp the practical implementation of DSA concepts.</p>
+
+<p>As for future aspects of the project, there is potential to enhance the game by implementing more complex levels and optimizing operations using advanced algorithms and data structures. This would further challenge players and improve the overall gameplay experience.</p>
+
+<p>The Tube Puzzle Game offers a unique and entertaining way to develop problem-solving skills while exploring the applications of data structures and algorithms in a fun and interactive environment.</p>
+
+<h2 id="-getting-started-">🏁 Getting Started <a name="getting_started"></a></h2>
+
+<p>To get a copy of the project up and running on your local machine, follow these steps:</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+  <li>Visual Studio</li>
+  <li>C++ compiler</li>
+  <li>wxWidgets library</li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+
+<ol>
+  <li>Clone the repository to your local machine.</li>
+  <li>Open the project in Visual Studio. (Download <a href="https://visualstudio.microsoft.com/">Visual Studio</a>)
+// run the sln file</li>
+  <li>Build the project to compile the source code.</li>
+  <li>Run the application and start playing the Tube Puzzle Game.</li>
+</ol>
+
+<p>//just wanna play the game? open .exe file</p>
+<h2 id="-usage-">🎈 Usage <a name="usage"></a></h2>
+
+<ul>
+  <li>Launch the game application.</li>
+  <li>Follow the on-screen instructions to navigate through the game menu.</li>
+  <li>Use the mouse or keyboard to interact with the game elements.</li>
+  <li>Connect the tubes strategically to fill matching tube colors in columns.</li>
+  <li>Solve the puzzles within the given constraints to win the game.</li>
+</ul>
+
+<h2 id="️-built-using-">⛏️ Built Using <a name="built-using"></a></h2>
+
+<ul>
+  <li>C++ - Programming Language</li>
+  <li>Visual Studio - Integrated Development Environment</li>
+  <li>wxWidgets - GUI Library</li>
+</ul>
+
+<h2 id="-file-structure-">📁 File Structure <a name="file-structure"></a></h2>
+
+<p>The project repository contains the following files and directories:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>Tube_Puzzle/
+├── readme.md
+├── Tube_Puzzle/
+│ ├── ActionStack.cpp
+│ ├── ActionStack.h //contains code for stack that saves game Data
+│ ├── App.cpp
+│ ├── App.h     // the primary wxWidget init file
+│ ├── GameControl.cpp
+│ ├── GameControl.h     // contains Backend i.e. game logic
+│ ├── MainFrame.cpp
+│ ├── MainFrame.h       // the GUI layout of Game
+│ ├── Queue.cpp
+│ ├── Queue.h       // extra Queue Data structure for game for future
+│ ├── stack.cpp
+│ ├── stack.h       // stack for storing colors and ID in each column
+│ ├── TubeSet.cpp
+│ └── TubeSet.h     // class to deal with array of color of tubes in columns, with several functions to manipulate
+│ ├── ClassDiagram.cd // the Class structure and relation diagram
+└── Tube_Puzzle.sln
+</code></pre>
+</div>
+<h2 id="-screenshots-">📷 Screenshots <a name="screenshots"></a></h2>
+
+<p>Some screenshots of the Tube Puzzle Game:<br />
+<img src="https://github.com/suecarjayeswal/Tube_Puzzle/raw/master/Screenshots/HomeScreen.png" alt="Screenshot" style="width:50%;min-width:300px;" />
+<img src="https://github.com/suecarjayeswal/Tube_Puzzle/raw/master/Screenshots/CompletionPage.png" alt="Screenshot" style="width:50%;min-width:300px;" />
+<img src="https://github.com/suecarjayeswal/Tube_Puzzle/raw/master/Screenshots/Others.png" alt="Screenshot" style="width:50%;min-width:300px;" />
+<img src="https://github.com/suecarjayeswal/Tube_Puzzle/raw/master/Screenshots/FlowOfExecution.png" alt="Screenshot" style="width:50%;min-width:300px;" />
+<img src="https://github.com/suecarjayeswal/Tube_Puzzle/raw/master/Screenshots/ClassesDesign.png" alt="Screenshot" style="width:90%;min-width:300px;" /></p>
+
+<h2 id="-what-we-learned-">💡 What We Learned <a name="what-we-learned"></a></h2>
+
+<p>While developing the Tube Puzzle Game project, we gained valuable experience in various areas, including:</p>
+
+<ul>
+  <li>Utilizing data structures like <strong>Stack and LinkedList</strong> to manage game actions and tube connections.</li>
+  <li>Implementing Object-Oriented Programming (<strong>OOP</strong>) principles to structure the game codebase.</li>
+  <li>Dealing with <strong>pointers</strong> to efficiently manipulate and store game data.</li>
+  <li>Leveraging <strong>wxWidgets</strong> library to create an interactive GUI for the game.</li>
+</ul>
+
+<p>These experiences have enhanced our understanding of data structures, OOP concepts, and handling pointers in real-world applications.</p>
+
+<h2 id="️-authors-">✍️ Authors <a name="authors"></a></h2>
+
+<ul>
+  <li><a href="https://github.com/suecarjayeswal">@suecarjayeswal</a></li>
+  <li>Himanshu Gurung</li>
+</ul>
+
+<p>See the list of <a href="https://github.com/yourusername/tube-puzzle-game/contributors">contributors</a> who participated in this project.</p>
+
+<h2 id="-acknowledgements-">🎉 Acknowledgements <a name="acknowledgement"></a></h2>
+
+<p>We would like to extend our sincere gratitude to our project supervisor, <a href="https://www.linkedin.com/in/prakash-poudyal-6623b019/">Dr. Prakash Poudyal</a>, for his invaluable guidance, professional counsel, and continuous support throughout the development of this project. His expertise and insightful feedback have been instrumental in shaping our project and providing inspiration for our work. We are highly indebted to him for believing in us and pushing us to achieve our best.</p>
+
+<p>We would also like to express our sincere regards to the <a href="https://math.ku.edu.np/">Department of Mathematics</a>, Kathmandu University (<a href="https://ku.edu.np/">KU</a>), School of Science (<a href="http://sos.ku.edu.np/">SOS</a>) for including the project COMP 202 in our syllabus. This provided us with a platform and network to undertake this project and succeed in its completion.</p>
+
+<p>Furthermore, we would like to extend our gratitude to all of our classmates who have made significant contributions through their criticism, suggestions, and counsel. Their valuable input has played a crucial role in refining our project and helping us overcome challenges. This project has been a great opportunity for us to learn new concepts and problem-solving techniques, which will undoubtedly benefit us in our future endeavors.</p>
+
+<p>We would also like to thank our friends and family for their unwavering support and encouragement throughout this project. Their belief in our abilities has motivated us to overcome obstacles and strive for excellence.</p>
+
+<p>Finally, we express our appreciation to all the individuals, communities, and online resources that have provided valuable insights, tutorials, and documentation related to the technologies and tools we utilized in this project. Their contributions have been instrumental in our learning and development journey.</p>
+
+<p>This project has been a collective effort, and we are grateful to everyone who has contributed directly or indirectly to its success. Thank you all for being part of this remarkable journey!</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=BjQhp0eHmJw&amp;list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G">GUI learning Playlist wxWidgets C++</a> (YouTube)</li>
+  <li><a href="https://www.youtube.com/watch?v=5v00F8hEV7E">Event handling</a> (YouTube)</li>
+</ul>
+</p>
+
+
+
+        <span class="badge">June 13, 2023</span>
+        <!-- label classes: label-default,label-primary,label-success,label-info,label-warning,label-danger    -->
+        <div class="pull-right"><span class="label label-primary">DSA</span><span class="label label-success">COMP202</span><span class="label label-info">mini-project</span><span class="label label-warning">3rdSem</span></div>
+      </div>
+
+
+      <!-- Footer -->
+      <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+        <p class="footer-contact">
+          
+          <i class="fa-sm fa fa-envelope"></i>
+          <a href="mailto:kucmc@ku.edu.np">kucmc@ku.edu.np</a> <br>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          Dhulikhel, Kavre<br>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-external-link"></i> Links</h3>
+        <p><a href="/about"> About ( Who we are )</a></p>
+        <p><a href="/blog"> Events ( Our activities )</a></p>
+        <p><a href="/projects"> Projects ( Our Fellows' Projects )</a></p>
+        <p><a href="/team"> Team ( Meet the Team )</a></p>
+        <p><a href="/contact"> Contact ( Feel free to contact )</a></p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-heart"></i> Socialize</h3>
+        <div id="social-icons">
+          
+            <a href="https://www.instagram.com/kucmc.official/" class="btn-group google-plus">
+              <i class="fa fa-instagram"></i>
+             </a>
+          
+
+          
+            <a href="http://www.linkedin.com" class="btn-group linkedin">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          
+
+          
+            <a href="https://www.tiktok.com/@math_ku" class="btn-group twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16"> <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/> </svg>
+            </a>
+          
+
+          
+            <a href="https://www.facebook.com/kucmc1" class="btn-group facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright text center">
+    <p>&copy; Copyright 2023, Kathmandu University Computational Mathematics Club. <br>Website created by: <a href="https://www.linkedin.com/in/priyanka-panta-8451b4251/" target="_blank">Priyanka Panta</a> & <a href="https://www.linkedin.com/in/swikar-jaiswal-278b31197/" target="_blank">Swikar Jaiswal</a></p>
+    <!-- <p>&copy; Copyright 2023, <a href="#">Your Website Link</a>. <br>Theme ported by <a href="https://melvinchng.github.io/" target="_blank">Melvin Ch'ng</a></p> -->
+  </div>
+</footer>
+
+  </body>
+
+
+
+</html>
+
+
